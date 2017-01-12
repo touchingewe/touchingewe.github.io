@@ -1,0 +1,25 @@
+
+.ta-design { 
+    @include grid-span(12,1); 
+    @include clearfix; 
+    text-align: center; 
+    padding: 0px 0 10px 0; 
+        
+    p {
+        @include font-size(9px); 
+
+        @include breakpoint($desk,true) { 
+            @include font-size(10px); 
+        }
+    } 
+
+    a,
+    a:visited {
+        text-decoration: none;
+        color: $primary;
+    }
+
+    a:hover {
+        color: $white;
+    }
+}

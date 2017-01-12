@@ -18,7 +18,7 @@ I'd try this!
 
 # Also this works for H1
 ## This for H2
-### This for H3 etc... but seems a bit out?
+### This for H3 etc... --but seems a bit out?-- correct now!
 
 Jekyll also offers powerful support for code snippets:
 

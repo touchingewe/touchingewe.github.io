@@ -22,11 +22,19 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  touchingewe
 twitter_username: #
 # Build settings
+
+sass:
+  sass_dir: _sass
+  style: compressed
 markdown: kramdown
 highlighter: rouge
-theme: minima
+
 gems:
+  - jekyll-gist
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+  - package.json
+  - node_modules
+  - gulpfile.js

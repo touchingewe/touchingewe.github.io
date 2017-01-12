@@ -1,0 +1,49 @@
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+
+// Import sass partials
+@import "variables/**/*";
+@import "abstractions/**/*";
+@import "base/**/*";
+@import "components/**/*";
+
+header {
+  @include grid-span(12,1);
+  background-color: $primary;
+  color: $white;
+  box-sizing: border-box;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+
+footer {
+  @include grid-span(12,1);
+  background-color: $black;
+  color: $white;
+  margin-top: 2em;
+  box-sizing: border-box;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.wrapper
+{
+    @include grid-span(12,1);
+    @include clearfix;
+    float: none;
+    box-sizing: border-box;
+	padding: 0 1em;
+
+	@include breakpoint($tab, true) { 
+		padding: 0; 
+		margin: 0em auto 0em auto; 
+		width: $tab; 
+	}
+
+	@include breakpoint($desk, true) { 
+		width: $desk; 
+	}
+}
